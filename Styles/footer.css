@@ -1,0 +1,65 @@
+footer{
+    height: 774px;
+    background-image: url("/img/footerimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .heart{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .heart img{
+    height: 186px;
+}
+
+footer .see-ya{
+ display: flex;
+    color: #FFF;
+    height: 50%;
+   background-color: rgba(0, 0, 0, 0.79);
+   justify-content: space-between;
+   padding-bottom: 14px;
+}
+
+footer .see-ya h2{
+    align-self: center; 
+    font-family: 'Maven Pro', sans-serif;
+font-size: 32px;
+font-weight: 500; 
+}
+
+footer .see-ya .phone{
+   align-self: flex-end;
+   margin-left: 14px;
+   font-family: 'Maven Pro', sans-serif;
+   font-size: 12px;
+   font-weight: 400;
+}
+
+footer .see-ya .phone img{   
+    position: relative; 
+height: 14px;
+top: 4px;
+margin-right: 2px;
+}
+
+footer .see-ya .mail{
+    align-self: flex-end;  
+    margin-right: 14px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 400;   
+}
+
+footer .see-ya .mail img {
+    position: relative; 
+    height: 14px;
+    top: 4px;
+    margin-left: 2px;
+}

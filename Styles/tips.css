@@ -16,22 +16,6 @@
     margin-top: 35px;
 }
 
-.tips .bold{
-    margin-top: 41px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--clr-black);
-}
-
-.tips .text{
-    text-align: center;
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 11px;
-    height: 105px;
-}
-
 .tips .btn-tips{
 width: 105px;
 height: 35px;

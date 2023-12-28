@@ -1,0 +1,120 @@
+.planned-plantations{
+    text-align: center;
+    color: var(--clr-black);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.plantations{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;     
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plantations .container{
+    width: 175px;
+    height: 220px;
+    margin: 14px 0 0 14px;   
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.plantations .container .plant{
+    background-color: blue;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plantations .container .gurka{
+    background-image: url("/img/gurka.jpg");
+    background-size: cover;
+}
+
+.plantations .container .gurka1{
+    background-image: url("/img/gurka2.jpg");
+    background-size: cover;
+    
+}
+
+.plantations .container .gurka2{
+    background-image: url("/img/gurka3.jpg");
+    background-size: cover;    
+}
+
+.plantations .container .tomat{
+    background-image: url("/img/tomat.jpg");
+    background-size: cover;
+}
+
+.plantations .container .tomat1{
+    background-image: url("/img/tomat2.jpg");
+    background-size: cover;
+    
+}
+
+.plantations .container .tomat2{
+    background-image: url("/img/tomat3.jpg");
+    background-size: cover;    
+}
+
+.plantations .container div img {
+    height: 90px;
+    stroke-linejoin: round;
+    
+}
+
+.plantations .container .textbox-one,
+.plantations .container .textbox-two{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    padding: 0 7px;
+    padding-top: 7px;
+}
+
+.plantations .container .textbox-one .plant-name{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+
+.plantations .container .textbox-one .date{
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.plantations .container .textbox-two .name-latin{
+    font-size: 10px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+}
+
+.plantations .container .textbox-two img{
+    height: 16px;
+}
+
+.plantations .btn-plant{
+   margin: 31px 50px 0 50px;
+}
+
+.plantations .circle{
+    align-self: center;
+    margin-top: 47px;
+}
+
+.plantations .circle img{
+    height: 132px;
+    
+}
+
+.plantations .btn-planted-plants{
+    margin-bottom: 100px;
+}
