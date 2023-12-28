@@ -1,0 +1,55 @@
+header{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+header .nav-burger img{
+    position:fixed;
+    width: 40px;
+    height: 30px;
+    margin: 13px;
+    top: 0px;
+    right: 0px;
+}
+
+header .logo{
+    display: flex;
+    flex: 1;
+    min-width: 390px;
+    height: 390px;
+    background-image: url("../img/first.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;   
+    background-position: 50%;
+}
+
+header .logo img{
+    height: 186px;
+}
+
+header .seedling{
+    display: flex;
+    flex: 1;
+    background-color: var(--clr-brown);  
+    height: 195px;
+    justify-content: center;
+    align-items: center;  
+}
+
+header .dig{
+    display: flex;
+    flex: 1;
+    background-color:var(--clr-green);    
+    height: 195px;
+    justify-content: center;
+    align-items: center;  
+}
+
+header .dig img,
+header .seedling img{
+    height: 130px;
+}
