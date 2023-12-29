@@ -1,65 +1,139 @@
-footer{
-    height: 774px;
-    background-image: url("/img/footerimg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+footer {
+  height: 774px;
+  background-image: url("/img/footerimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .heart {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .heart img {
+  height: 186px;
+}
+
+footer .see-ya {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.79);
+  padding-bottom: 14px;
+  justify-content: center;
+}
+
+footer .see-ya h2 {
+  align-self: center;
+  justify-self: center;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+footer .see-ya .contact{
+    position: relative;   
+    bottom: -160px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
-footer .heart{
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer .see-ya .phone,
+footer .see-ya .mail {
+  align-self: flex-end;
+  margin-left: 14px;
+  margin-right: 14px;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
 }
 
-footer .heart img{
-    height: 186px;
+footer .see-ya .phone img,
+footer .see-ya .mail img {
+  position: relative;
+  height: 14px;
+  top: 4px;
 }
 
-footer .see-ya{
- display: flex;
-    color: #FFF;
-    height: 50%;
-   background-color: rgba(0, 0, 0, 0.79);
-   justify-content: space-between;
-   padding-bottom: 14px;
-}
-
-footer .see-ya h2{
-    align-self: center; 
-    font-family: 'Maven Pro', sans-serif;
-font-size: 32px;
-font-weight: 500; 
-}
-
-footer .see-ya .phone{
-   align-self: flex-end;
-   margin-left: 14px;
-   font-family: 'Maven Pro', sans-serif;
-   font-size: 12px;
-   font-weight: 400;
-}
-
-footer .see-ya .phone img{   
-    position: relative; 
-height: 14px;
-top: 4px;
-margin-right: 2px;
-}
-
-footer .see-ya .mail{
-    align-self: flex-end;  
-    margin-right: 14px;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 12px;
-    font-weight: 400;   
+footer .see-ya .phone img {
+  margin-right: 2px;
 }
 
 footer .see-ya .mail img {
+  margin-left: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    height: 590px;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow :auto;    
+  }
+
+  footer .heart {
+    height: 100%;
+    flex: 1;
+  }
+
+  footer .heart img {
+    height: 186px;
+  }
+
+  footer .see-ya {
+    display: flex;
+    height: 100%;
+    flex: 1;
+    flex-shrink: 0;
+  }
+
+  footer .see-ya h2 {
+    font-size: 64px;
+    flex-shrink: 0;
+  }
+
+  footer .see-ya .phone,
+  footer .see-ya .mail {
+    align-self: flex-end;
+    margin-left: 14px;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    flex-shrink: 0;   
+  }
+
+  footer .see-ya .mail {
     position: relative; 
-    height: 14px;
-    top: 4px;
+      
+  }
+
+  footer .see-ya .phone img,
+  footer .see-ya .mail img {
+    position: relative;
+    height: 25px;
+    top: 8px;
+  }
+
+  footer .see-ya .phone img {
+    margin-right: 2px;
+  }
+
+  footer .see-ya .mail img {
     margin-left: 2px;
+  }
+
+  footer .see-ya .contact{
+    position: relative;   
+    bottom: -230px;
+    display: flex;
+    justify-content: space-between;
+}
+.top {
+    font-size: 24px;
+  }
 }

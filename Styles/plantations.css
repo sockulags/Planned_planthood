@@ -1,120 +1,226 @@
-.planned-plantations{
-    text-align: center;
-    color: var(--clr-black);
-    font-size: 16px;
-    font-weight: 600;
+.planned-plantations {
+  text-align: center;
+  color: var(--clr-black);
+  font-size: 16px;
+  font-weight: 600;
+ 
 }
 
-.plantations{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;     
-    align-items: center;
+.plantations {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
 }
 
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.plantations .container{
-    width: 175px;
-    height: 220px;
-    margin: 14px 0 0 14px;   
-    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+.plantations .container {
+  width: 175px;
+  height: 220px;
+  margin: 14px 0 0 14px;
+  box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.plantations .container .plant{
-    background-color: blue;
-    height: 160px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.plantations .container .plant {
+  background-color: blue;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.plantations .container .gurka{
-    background-image: url("/img/gurka.jpg");
-    background-size: cover;
+.plantations .container .gurka {
+  background-image: url("/img/gurka.jpg");
+  background-size: cover;
 }
 
-.plantations .container .gurka1{
-    background-image: url("/img/gurka2.jpg");
-    background-size: cover;
-    
+.plantations .container .gurka1 {
+  background-image: url("/img/gurka2.jpg");
+  background-size: cover;
 }
 
-.plantations .container .gurka2{
-    background-image: url("/img/gurka3.jpg");
-    background-size: cover;    
+.plantations .container .gurka2 {
+  background-image: url("/img/gurka3.jpg");
+  background-size: cover;
 }
 
-.plantations .container .tomat{
-    background-image: url("/img/tomat.jpg");
-    background-size: cover;
+.plantations .container .tomat {
+  background-image: url("/img/tomat.jpg");
+  background-size: cover;
 }
 
-.plantations .container .tomat1{
-    background-image: url("/img/tomat2.jpg");
-    background-size: cover;
-    
+.plantations .container .tomat1 {
+  background-image: url("/img/tomat2.jpg");
+  background-size: cover;
 }
 
-.plantations .container .tomat2{
-    background-image: url("/img/tomat3.jpg");
-    background-size: cover;    
+.plantations .container .tomat2 {
+  background-image: url("/img/tomat3.jpg");
+  background-size: cover;
 }
 
 .plantations .container div img {
-    height: 90px;
-    stroke-linejoin: round;
-    
+  height: 90px;
+  stroke-linejoin: round;
 }
 
 .plantations .container .textbox-one,
-.plantations .container .textbox-two{
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-end;
-    padding: 0 7px;
-    padding-top: 7px;
+.plantations .container .textbox-two {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  padding: 0 7px;
+  padding-top: 7px;
 }
 
-.plantations .container .textbox-one .plant-name{
-    font-size: 14px;
-    font-weight: 600;
-    font-family: 'Lato', sans-serif;
+.plantations .container .textbox-one .plant-name {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
 }
 
-.plantations .container .textbox-one .date{
-    font-size: 10px;
-    font-weight: 700;
+.plantations .container .textbox-one .date {
+  font-size: 10px;
+  font-weight: 700;
 }
 
-.plantations .container .textbox-two .name-latin{
-    font-size: 10px;
-    font-weight: 300;
-    font-family: 'Lato', sans-serif;
+.plantations .container .textbox-two .name-latin {
+  font-size: 10px;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
 }
 
-.plantations .container .textbox-two img{
-    height: 16px;
+.plantations .container .textbox-two img {
+  height: 16px;
+  cursor: pointer;
 }
 
-.plantations .btn-plant{
-   margin: 31px 50px 0 50px;
+.plantations .prev-plants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.plantations .circle{
-    align-self: center;
-    margin-top: 47px;
+.plantations .btn-plant {
+  margin: 31px 50px 0 50px;
 }
 
-.plantations .circle img{
-    height: 132px;
-    
+.plantations .circle {
+  align-self: center;
+  margin-top: 47px;
 }
 
-.plantations .btn-planted-plants{
-    margin-bottom: 100px;
+.plantations .circle img {
+  height: 132px;
+}
+
+.plantations .btn-planted-plants {
+  margin-bottom: 100px;
+  justify-self: center;
+  width: fit-content;
+}
+
+@media screen and (min-width: 768px) {
+  .planned-plantations {
+    font-size: 32px;
+  }
+
+  .plantations{
+    max-width: 1000px;
+  }
+  
+  .plantations .container {
+    width: 293px;
+    height: 407px;
+    margin: 26px 0 0 26px;
+  }
+
+  .plantations .container .plant {
+    height: 296px;
+  }
+
+  .plantations .container div img {
+    height: 205px;
+    flex-shrink: 0;
+  }
+
+  .plantations .container .textbox-one .plant-name {
+    font-size: 24px;
+  }
+
+  .plantations .container .textbox-one .date {
+    font-size: 16px;
+    margin-top: 7px;
+  }
+
+  .plantations .container .textbox-two .name-latin {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .plantations .container .textbox-two img {
+    height: 24px;
+margin-top: 30px;
+  }
+
+  .plantations .btn-plant{
+    font-size: 24px;
+    width: 157px;
+    height: 63px;
+    margin-top:56px;
+  }
+
+  .plantations .prev-plants {
+    display: grid;
+    margin-left: 40px;
+    grid-template-areas:
+    "emptySpace circle"
+      "bold circle"
+      "text circle"
+      "button circle"
+      "emptySpace2 circle";
+    align-items: center;
+    align-content: center;
+    align-content: space-around;
+  }
+
+  .plantations .prev-plants .bold {
+    grid-area: bold;
+    text-align: left;
+    font-size: 32px;
+  }
+
+  .plantations .prev-plants .circle {
+    grid-area: circle;
+    width: 377px;
+    height: 377px;
+    margin-bottom: 106px;
+  }
+
+  .plantations .prev-plants .circle img{
+    height: 205px;
+  }
+
+  .plantations .prev-plants .text {
+    grid-area: text;
+    text-align: left;
+    height: 100px;
+    width: 467px;
+    font-size: 16px;
+
+  }
+
+  .plantations .prev-plants .btn-planted-plants {
+    grid-area: button;
+    justify-self: start;
+    font-size: 24px;
+    width: 281px;
+    height: 63px;
+  }
 }

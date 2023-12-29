@@ -1,55 +1,112 @@
-header{
-    display: flex;   
-    flex-wrap: wrap; 
-    width: 100vw;
+header {
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 
-header .nav-burger img{
-    position:absolute;
-    width: 40px;
-    height: 30px;
-    margin: 13px;
-    top: 0px;
-    right: 0px;
-    cursor: pointer;
+header .nav-burger img {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  margin: 13px;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
 }
 
-header .logo{
-    display: flex;    
-    width: 100%; 
-    height: 390px;
-    background-image: url("../img/first.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;   
-    background-position: 50%;
+nav{
+    display: none;
 }
 
-header .logo img{
-    height: 186px;
+header .logo {
+  display: flex;
+  width: 100%;
+  height: 390px;
+  background-image: url("../img/first.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  background-position: 50%;
 }
 
-header .seedling{
-    display: flex;   
-    width: 50%;
-    background-color: var(--clr-brown);  
-    height: 195px;
-    justify-content: center;
-    align-items: center;  
+header .logo img {
+  height: 186px;
 }
 
-header .dig{
-    display: flex;  
-    width: 50%;
-    background-color:var(--clr-green);    
-    height: 195px;
-    justify-content: center;
-    align-items: center;  
+header .seedling {
+  display: flex;
+  width: 50%;
+  background-color: var(--clr-brown);
+  height: 195px;
+  justify-content: center;
+  align-items: center;
+}
+
+header .dig {
+  display: flex;
+  width: 50%;
+  background-color: var(--clr-green);
+  height: 195px;
+  justify-content: center;
+  align-items: center;
 }
 
 header .dig img,
-header .seedling img{
-    height: 130px;
+header .seedling img {
+  height: 130px;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: grid;
+    grid-template-areas:
+      "a b"
+      "a c";
+   
+  }
+  header .logo {
+    grid-area: a;
+    height: 540px;
+  }
+
+  header .logo img{
+    height: 186px;
+    width: auto;
+  }
+  header .seedling {
+grid-area: b;
+height: auto;
+width: auto;
+  }
+
+  header .seedling img,
+  header .dig img{
+    height: 195px;
+  }
+  header .dig{
+    grid-area: c;
+    height: auto;
+    width: auto;
+  }
+  nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+    width: 100%;
+        box-shadow: 0px 4px 4px 0px rgba(3, 56, 47, 0.11);
+  }
+  header .nav-burger{
+    display: none;
+  }
+  nav a{
+    color:var(--clr-dark-green);
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    flex: 1;   
+    margin-right: 0;
+  }
 }

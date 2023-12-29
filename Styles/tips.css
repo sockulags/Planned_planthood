@@ -1,10 +1,14 @@
+body{
+    display: grid;
+}
+
 .tips{
-    min-width: 350px;
-    
+    min-width: 350px;   
+ 
    display: flex;
    flex-direction: column;
    align-items: center;
-   align-content: center;
+   align-content: center; 
 }
 
 .tips h1{
@@ -13,7 +17,8 @@
     font-size: 24px;
     font-weight: 500;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 35px;    
+    margin-right: 0;
 }
 
 .tips .btn-tips{
@@ -25,17 +30,94 @@ height: 35px;
     margin-top: 30px;
 }
 
+.tips .tip-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .tips .circle img{
     width: 126px;
     height: 124px;
     stroke-width: 1px;
 }
 
-.tips .line{
+.line{
+    margin: auto;
     height: 3px;
     width: 202px;
     background-color: var(--clr-dark-green);
     margin-top: 50px;
     margin-bottom: 40px;
     border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+.tips{  
+    max-width: 1000px; 
+    justify-self: center;
+   display: grid;
+   grid-template-areas: "a a"
+"b c"
+;
+}
+
+.tips h1{
+    grid-area: a;
+    font-size: 48px;
+}
+.tips .circle{
+    grid-area: b;
+   width: 377px;
+    height: 377px;
+    margin-right: 0;
+    flex-shrink: 0;
+    float: right;
+}
+
+.tips .circle img{
+    height: 194px;
+    width: auto;
+}
+
+.tips .tip-div{
+    display: flex;
+    align-items: flex-start;
+    grid-area: c;
+    margin-left: 67px;
+    width: 50%;
+ }
+
+
+ .tips .tip-div .bold,
+ .tips .tip-div .text{
+    text-align: left;
+    width: 467px;
+ }
+
+ .tips .tip-div .bold{
+    font-size: 32px;
+ }
+
+ .tips .tip-div .text{
+    font-size: 16px;
+ }
+
+.tips .tip-div .btn-tips{
+    position: relative;
+    align-self: flex-end;
+    justify-self: flex-end;
+    left: 200px;
+    font-size: 24px;
+    width: 180px;
+    height: 63px;
+}
+
+.line {
+    width: 300px;
+    margin-top: 93px;
+}
+
 }
