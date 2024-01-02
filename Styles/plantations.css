@@ -138,8 +138,16 @@
   }
 
   .plantations{
-    max-width: 1000px;
-    justify-self: flex-start;   
+    max-width: 1000px;     
+  }
+
+  .my-plantations{
+    justify-self: flex-start;
+    width: 100%;
+  }
+
+  .my-plantations .planned-plantations{
+    text-align: center; 
   }
   
   .plantations .container {
