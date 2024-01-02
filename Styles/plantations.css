@@ -2,8 +2,7 @@
   text-align: center;
   color: var(--clr-black);
   font-size: 16px;
-  font-weight: 600;
- 
+  font-weight: 600; 
 }
 
 .plantations {
@@ -12,6 +11,12 @@
   flex-direction: column;
   align-items: center;
   justify-self: center;
+}
+
+.my-cards {
+  align-self: flex-start;
+  margin-bottom: 48px;
+
 }
 
 .cards {

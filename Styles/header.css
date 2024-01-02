@@ -1,10 +1,16 @@
-header {
+.index {
   display: flex;
   flex-wrap: wrap;
   
 }
 
-header .nav-burger img {
+.my-pages {
+  display: flex;
+
+  
+}
+
+.index .nav-burger img {
   position: absolute;
   width: 40px;
   height: 30px;
@@ -18,7 +24,44 @@ nav{
     display: none;
 }
 
-header .logo {
+.my-pages .nav-burger img{
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  margin: 13px;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+
+.my-pages .logo{
+  display: flex;
+  width: 100%;
+  height: 390px;
+  background-image: url("../img/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  background-position: 50%;
+  flex-direction: column;
+}
+
+.my-pages .logo h1{
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color:#FFF;
+  margin-top: 44px;
+}
+
+.my-pages .logo img {
+  height: 186px;
+}
+
+.index .logo {
   display: flex;
   width: 100%;
   height: 390px;
@@ -31,11 +74,11 @@ header .logo {
   background-position: 50%;
 }
 
-header .logo img {
+.index .logo img {
   height: 186px;
 }
 
-header .seedling {
+.index .seedling {
   display: flex;
   width: 50%;
   background-color: var(--clr-brown);
@@ -44,7 +87,7 @@ header .seedling {
   align-items: center;
 }
 
-header .dig {
+.index .dig {
   display: flex;
   width: 50%;
   background-color: var(--clr-green);
@@ -53,12 +96,16 @@ header .dig {
   align-items: center;
 }
 
-header .dig img,
-header .seedling img {
+.index .dig img,
+.index .seedling img {
   height: 130px;
 }
 
 @media screen and (min-width: 768px) {
+  .my-pages .logo h1{
+    font-size: 40px;
+  }
+
   header {
     display: grid;
     grid-template-areas:

@@ -1,4 +1,4 @@
-footer {
+.index-footer {
   height: 774px;
   background-image: url("/img/footerimg.jpg");
   background-size: cover;
@@ -7,18 +7,18 @@ footer {
   flex-direction: column;
 }
 
-footer .heart {
+.index-footer .heart {
   height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer .heart img {
+.index-footer .heart img {
   height: 186px;
 }
 
-footer .see-ya {
+.index-footer .see-ya {
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -28,7 +28,7 @@ footer .see-ya {
   justify-content: center;
 }
 
-footer .see-ya h2 {
+.index-footer .see-ya h2 {
   align-self: center;
   justify-self: center;
   font-family: "Maven Pro", sans-serif;
@@ -36,15 +36,15 @@ footer .see-ya h2 {
   font-weight: 500;
 }
 
-footer .see-ya .contact{
+.index-footer .see-ya .contact{
     position: relative;   
     bottom: -160px;
     display: flex;
     justify-content: space-between;
 }
 
-footer .see-ya .phone,
-footer .see-ya .mail {
+.index-footer .see-ya .phone,
+.index-footer .see-ya .mail {
   align-self: flex-end;
   margin-left: 14px;
   margin-right: 14px;
@@ -53,19 +53,54 @@ footer .see-ya .mail {
   font-weight: 400;
 }
 
-footer .see-ya .phone img,
-footer .see-ya .mail img {
+.index-footer .see-ya .phone img,
+.index-footer .see-ya .mail img {
   position: relative;
   height: 14px;
   top: 4px;
 }
 
-footer .see-ya .phone img {
+.index-footer .see-ya .phone img {
   margin-right: 2px;
 }
 
-footer .see-ya .mail img {
+.index-footer .see-ya .mail img {
   margin-left: 2px;
+}
+
+
+.my-pages-footer{
+    display: grid;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+    height: 220px;
+    background-color: var(--clr-brown);
+    padding: 16px 15px 18px 15px;
+}
+
+.my-pages-footer .img-container{
+    flex: 4;
+    width: 93%;
+    height: 93%;
+    overflow: hidden;
+
+}
+
+.my-pages-footer .img-container img{
+    size: 100%;
+    width: 100%;
+    min-height: 86px; 
+    object-fit: cover;
+}
+
+.my-pages-footer .img-container .water{   
+    margin-top: 40%;
+    transform: translateY(-60%);
+}
+
+.my-pages-top{
+    margin: 16px;
+    font-size: 14px;
 }
 
 @media screen and (min-width: 768px) {

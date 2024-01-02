@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Maven+Pro:wght@400;500&family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Styles/header.css" />
+    <link rel="stylesheet" href="Styles/tips.css" />
+    <link rel="stylesheet" href="Styles/plantations.css" />
+    <link rel="stylesheet" href="/Styles/footer.css" />
+    <link rel="stylesheet" href="/Styles/form.css"/>
+  </head>
+  <body>
+    <header class="my-pages shadow">
+      <div class="nav-burger">
+        <img class="shadow" src="./svg/burgir.svg" />
+      </div>
+      <div class="logo"><img class="shadow" src="./svg/Logo.svg" /><h1>Mina sidor</h1></div>
+     
+    </header>
+    <nav>
+      <a>PLANER</a>
+      <a>HISTORIK</a>
+      <a>TIPS</a>
+      <a>LOGGA IN</a>
+    </nav>
+    
+
+
+    <form>
+<h2>Lägg till ny plantering:</h2>
+<label for="planta">Planta:</label>
+<input class="" type="text" id="planta">
+<label for="date">Datum:</label>
+<input
+      placeholder=""
+      class=""
+      type="text"
+      onfocus="(this.type='date')"
+      onblur="(this.type='text')"
+      id="date" />
+<button type="submit">LÄGG TILL</button>
+</form>
+    <section class="plantations">
+      <h2 class="planned-plantations">Dina planerade planteringar:</h2>
+      <div class="cards my-cards">
+        <div class="container">
+          <div class="plant gurka"><img src="svg/plant.svg" /></div>
+          <div class="textbox-one">
+            <h3 class="plant-name">Gurka</h3>
+            <p class="date">15 april 2024</p>
+          </div>
+          <div class="textbox-two">
+            <p class="name-latin">Rico Coolio</p>
+            <img src="svg/garbage.svg" />
+          </div>
+        </div>        
+        </div>
+      </div>
+      <h2 class="planned-plantations">Dina planterade planteringar:</h2>
+      <div class="cards my-cards">
+        <div class="container">
+          <div class="plant gurka"><img src="svg/plant.svg" /></div>
+          <div class="textbox-one">
+            <h3 class="plant-name">Gurka</h3>
+            <p class="date">15 april 2024</p>
+          </div>
+          <div class="textbox-two">
+            <p class="name-latin">Rico Coolio</p>
+            <img src="svg/garbage.svg" />
+          </div>
+          
+        </div>
+        <div class="container">
+            <div class="plant gurka"><img src="svg/plant.svg" /></div>
+            <div class="textbox-one">
+              <h3 class="plant-name">Gurka</h3>
+              <p class="date">15 april 2024</p>
+            </div>
+            <div class="textbox-two">
+              <p class="name-latin">Rico Coolio</p>
+              <img src="svg/garbage.svg" />
+            </div>
+        </div>
+      </div>
+      
+      
+    </section>
+    <footer class="my-pages-footer">
+    <div class="img-container"><img src="/img/pepper.jpg"></div>
+    <div class="img-container"><img class="water" src="/img/water.jpg"></div>
+    <div class="img-container"><img src="/img/mixed.jpg"></div>
+    <div class="img-container"><img src="/img/farmers.jpg"></div>
+    </footer>
+    <a class="top" href="#top">Till toppen av sidan</a>
+  </body>
+</html>
