@@ -23,30 +23,31 @@
     <link rel="stylesheet" href="/Styles/form.css"/>
   </head>
   <body>
-    <header class="my-pages shadow">
+    <nav>
+        <a>PLANER</a>
+        <a>HISTORIK</a>
+        <a>TIPS</a>
+        <a>LOGGA UT</a>
+      </nav>
+      
+    <header class="shadow my-pages">
       <div class="nav-burger">
         <img class="shadow" src="./svg/burgir.svg" />
       </div>
       <div class="logo"><img class="shadow" src="./svg/Logo.svg" /><h1>Mina sidor</h1></div>
      
     </header>
-    <nav>
-      <a>PLANER</a>
-      <a>HISTORIK</a>
-      <a>TIPS</a>
-      <a>LOGGA IN</a>
-    </nav>
-    
+
 
 
     <form>
 <h2>Lägg till ny plantering:</h2>
-<label for="planta">Planta:</label>
-<input class="" type="text" id="planta">
-<label for="date">Datum:</label>
+<label class="plant-label" for="planta">Planta:</label>
+<input class="plant-input" type="text" id="planta">
+<label class="date-label" for="date">Datum:</label>
 <input
       placeholder=""
-      class=""
+      class="date-input"
       type="text"
       onfocus="(this.type='date')"
       onblur="(this.type='text')"

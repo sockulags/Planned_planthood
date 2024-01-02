@@ -3,14 +3,15 @@
   color: var(--clr-black);
   font-size: 16px;
   font-weight: 600; 
+ 
 }
 
 .plantations {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  justify-self: center;
+  align-self: center;
+  justify-self: center; 
 }
 
 .my-cards {
@@ -138,6 +139,7 @@
 
   .plantations{
     max-width: 1000px;
+    justify-self: flex-start;   
   }
   
   .plantations .container {

@@ -106,6 +106,10 @@ nav{
     font-size: 40px;
   }
 
+  .my-pages{
+    box-shadow: none;
+  }
+
   header {
     display: grid;
     grid-template-areas:
