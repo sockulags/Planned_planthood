@@ -90,6 +90,7 @@
     width: 100%;
     min-height: 86px; 
     object-fit: cover;
+    opacity: 0.73;
 }
 
 .my-pages-footer .img-container .water{   

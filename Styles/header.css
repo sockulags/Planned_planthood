@@ -106,37 +106,41 @@ nav{
     font-size: 40px;
   }
 
+  .my-pages .nav-burger{
+    display: none;
+  }
+
   .my-pages{
     box-shadow: none;
   }
 
-  header {
+  .index {
     display: grid;
     grid-template-areas:
       "a b"
       "a c";
    
   }
-  header .logo {
+  .index .logo {
     grid-area: a;
     height: 540px;
   }
 
-  header .logo img{
+  .index .logo img{
     height: 186px;
     width: auto;
   }
-  header .seedling {
+  .index .seedling {
 grid-area: b;
 height: auto;
 width: auto;
   }
 
-  header .seedling img,
-  header .dig img{
+  .index .seedling img,
+  .index .dig img{
     height: 195px;
   }
-  header .dig{
+  .index .dig{
     grid-area: c;
     height: auto;
     width: auto;
@@ -148,7 +152,7 @@ width: auto;
     width: 100%;
         box-shadow: 0px 4px 4px 0px rgba(3, 56, 47, 0.11);
   }
-  header .nav-burger{
+  .index .nav-burger{
     display: none;
   }
   nav a{
